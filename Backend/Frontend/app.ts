@@ -12,8 +12,8 @@ productImage.onchange= async function(ev:Event){
     //  console.log(files[0]);
 
       formData.append("file", files[0]);
-      formData.append("upload_preset", "Ecommerce");
-      formData.append("cloud_name", "joendambuki16");
+      formData.append("upload_preset", "Ecommercesite");
+      formData.append("cloud_name", "simonmuturi");
 
    let x= await fetch("https://api.cloudinary.com/v1_1/joendambuki16/image/upload",
     {
@@ -25,7 +25,7 @@ productImage.onchange= async function(ev:Event){
     console.log(data.url);
     let someone={
       Name:data.url as string,
-      Email:"gichukicynthia1@gmail.com",
+      Email:"simomutu8@gmail.com",
       Destination:"China",
       TravelDate:"2023/03/03"
     }
