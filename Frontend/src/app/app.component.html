@@ -1,7 +1,7 @@
 <div class="container">
   <div class="links">
-    <a routerLink="">JituPort</a>
-    <a *ngIf="auth.isLoggedIn" routerLink="book">Book</a>
+    <a routerLink="">Virtual Airport</a>
+    <a *ngIf="auth.isLoggedIn" routerLink="book">Book Flight</a>
     <a *ngIf="!auth.isLoggedIn" routerLink="login">Login</a>
     <a *ngIf="!auth.isLoggedIn" routerLink="register">Register</a>
     <a *ngIf="auth.isLoggedIn">Welcome {{auth.getName()}}</a>
