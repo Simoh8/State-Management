@@ -2,7 +2,6 @@ import ejs from 'ejs'
 import sendMail from '../Helpers/email';
 import mssql from 'mssql'
 import { sqlConfig } from '../Config';
-
 interface User{
 Id:string
 Name:string
@@ -38,7 +37,6 @@ await pool.request().query(`UPDATE UserTable SET isSent ='1' WHERE Id ='${user.I
 })
 }    
 }
-
 export default sendWelcomeEmail
 
 
